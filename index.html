@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout con Grid</title>
+    <script src="https://kit.fontawesome.com/f842b1a803.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h2>Tienda Oficial Adidas</h2>
+        <div class="hamburger">
+            <span class="mdi mdi-menu"></span>
+        </div>
+        </header>
+            <div class="lista">
+                <label for="item-select"> Ordenar por: </label>
+                <select name="item" id="item-select">
+                    <option value="Precio">Precio</option>
+                    <option value="Talla">Talla</option>
+                    <option value="Color">Color</option>
+                </select>
+            </div>
+        <nav id="nav-productos">
+                <h4>Categorias</h4>
+                <ul>
+                    <li>Ropa(2)</li>
+                    <li>Zapatos(2)</li>
+                    <li>Accesorios(2)</li>
+                </ul>
+        </nav>
+        <main class="container">
+            <div>
+                <section class="producto">
+                    <div>
+                        <img src="assets/img/Messi_10_Inter_Miami_CF_22-23_Home_Authentic_Jersey_Pink_JE9705_02_laydown.avif" alt="Leo-Home">
+                    </div>
+                    <div>
+                        <h3>Leo Messi Inter Miami Home Kit</h3>
+                        <p>50.000</p>
+                    </div>
+                    <div>
+                        <button>Comprar</button>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section class="producto">
+                    <div>
+                        <img src="assets/img/Messi_10_Inter_Miami_CF_23-24_Away_Jersey_Black_JE9704_02_laydown.avif" alt="Leo-Away">
+                    </div>
+                    <div>
+                        <h3>Leo Messi Inter Miami Away Kit</h3>
+                        <p>50.000</p>
+                    </div>
+                    <div>
+                        <button>Comprar</button>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section class="producto">
+                    <div>
+                        <img src="assets/img/X_Crazyfast.1_USA_Firm_Ground_Soccer_Cleats_White_IG0664_HM1.avif" alt="Edicion-especial">
+                    </div>
+                    <div>
+                        <h3>Zapatos Edicion Especial Leo Messi</h3>
+                        <p>35.000</p>
+                    </div>
+                    <div>
+                        <button>Comprar</button>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section class="producto">
+                    <div>
+                        <img src="assets/img/Copa_Mundial_Soccer_Shoes_Black_015110_01_standard.avif" alt="zapato-retro">
+                    </div>
+                    <div>
+                        <h3>Zapatos Leo Messi Retro</h3>
+                        <p>25.000</p>
+                    </div>
+                    <div>
+                        <button>Comprar</button>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section class="producto">
+                    <div>
+                        <img src="assets/img/Marvel_MLS_Captain_America_Mini_Ball_White_IP5507_01_standard.avif" alt="balon-marvel">
+                    </div>
+                    <div>
+                        <h3>Balon Edicion Especial Marvel</h3>
+                        <p>20.000</p>
+                    </div>
+                    <div>
+                        <button>Comprar</button>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section class="producto">
+                    <div>
+                    <img src="assets/img/Al_Hilm_Mini_Soccer_Ball_Gold_HG4778_02_standard_hover.avif" alt="Balon-mundial">
+                </div>
+                <div>
+                    <h3>Balon Final Mundial Qatar 2022</h3>
+                    <p>20.000</p>
+                    </div>
+                    <div>
+                        <button>Comprar</button>
+                    </div>
+                </section>
+            </div>
+            <nav class="pagination">
+                <ul class="pagination-list">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <div>
+                <span class="mdi mdi-instagram"></span>
+                <p>Encuentranos en <a href="https://www.adidas.cl/">ADIDAS</a> </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+

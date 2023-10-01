@@ -1,0 +1,142 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+.grid-container {
+  min-height: 100vh;     
+  border: 1px solid black;
+  grid-template-rows: 1fr 1fr 10fr 1fr;
+  grid-template-areas: 
+  "header"
+  "filtro"
+  "main"
+  "footer";
+}
+header {
+  padding: 5px;
+  color: white;
+  background-color: black;
+  grid-area: header; 
+  display: flex;
+}
+.lista {
+  padding: 10px;
+  color: white;
+  background-color:gray;
+  grid-area: filter;
+}
+#nav-productos {
+  display: none;
+}
+main {
+  padding: 10px;
+  grid-area: main;
+}
+footer {
+  padding: 10px;
+  grid-area: footer;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+h2 {
+  font-size: large;
+  margin-left: 5px;
+} 
+h4 {
+  margin-left: 5px;
+}
+.container {
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.producto {
+  height: 85%;
+}
+img { 
+  width: 80%;
+}
+li {
+  padding: 10px;
+}
+button {
+  border-radius: 10%;
+  background-color:black;
+  color: #fff;
+  padding: 15px 30px;
+  margin-bottom: 10px;
+}
+button:hover {
+  background-color: white;
+  color: black;
+} 
+ul {
+  list-style-type: none;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination-list  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.pagination-list li {
+  margin: 0 1px;
+  padding: 10px;
+  border: 1px black solid;
+}
+#item-select {
+  width: 100%;
+  font-family: 'Space Grotesk', sans-serif; 
+}
+.hamburger {
+  margin-left: auto;
+}
+.hamburger span {
+  font-size: 40px;
+}
+@media (min-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header main main"
+    "filter main main"
+    "nav main main"
+    "footer main main";
+    gap: 5px;  
+  }
+  .container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+    #nav-productos {
+    grid-area: nav;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  } 
+  .pagination {
+    display:none
+  }
+  .producto {
+    display: grid;
+    height: 530px;
+  }
+  .container {
+  display: grid
+}
+.hamburger {
+  display: none;
+}
+}
