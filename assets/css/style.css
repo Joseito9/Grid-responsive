@@ -108,15 +108,14 @@ p {
   .grid-container {
     display: grid;
     grid-template-areas: 
-    "header main main"
-    "filter main main"
+    "header filter filter"
     "nav main main"
-    "footer main main";
-    gap: 5px;  
+    "nav main main"
+    "footer main main";  
   }
   .container {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
     #nav-productos {
     grid-area: nav;
@@ -126,15 +125,12 @@ p {
     flex-direction: column;
     min-height: 100vh;
   } 
-  .pagination {
-    display:none
-  }
   .producto {
     display: grid;
     height: 530px;
   }
   .container {
-  display: grid
+  display: grid;
 }
 .hamburger {
   display: none;
